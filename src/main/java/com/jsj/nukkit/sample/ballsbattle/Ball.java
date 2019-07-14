@@ -33,6 +33,9 @@ public abstract class Ball {
 
     }
 
+    /**
+     * 异步线程执行
+     */
     public abstract void updatePlayerVision();
 
 

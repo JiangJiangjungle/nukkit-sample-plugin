@@ -51,6 +51,7 @@ public class PlayerVision {
     }
 
     public boolean outOfVision(Ball ball) {
+        //根据majorball的坐标判断，避免线程问题
         return true;
     }
 

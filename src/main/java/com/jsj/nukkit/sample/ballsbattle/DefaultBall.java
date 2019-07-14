@@ -40,7 +40,7 @@ public class DefaultBall extends Ball {
             if (out) {
                 //不包含则直接返回
                 if (!contains) return;
-                //已包含此球则要移除并发包
+                //已包含此球则要移除并且发包
                 playerVision.removeBall(this);
                 disappearFrom(player);
             } else if (!contains) {
