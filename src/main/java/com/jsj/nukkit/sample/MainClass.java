@@ -25,13 +25,10 @@ public class MainClass extends PluginBase {
 
         //Register the EventListener
         this.getServer().getPluginManager().registerEvents(new EventListener(this), this);
-
         //PluginTask
         this.getServer().getScheduler().scheduleRepeatingTask(new BroadcastPluginTask(this), 200);
-
         //Save resources
         this.saveResource("string.txt");
-
         //Config reading and writing
         Config config = new Config(
                 new File(this.getDataFolder(), "config.yml"),
